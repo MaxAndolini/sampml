@@ -30,5 +30,3 @@ simplified machine learning toolkit and associated SAMP projects
 - `sampml` SAMPML library
 
 More information can be found in `README.md` in the subdirectories.
-
-I KNOWW
