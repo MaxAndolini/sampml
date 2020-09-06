@@ -3,8 +3,9 @@ version: '{build}'
 image: Visual Studio 2017
 
 install:
-  - appveyor DownloadFile https://github.com/davisking/dlib/archive/v19.16.zip
-  - 7z x v19.16.zip
+build: off
+  - appveyor DownloadFile http://dlib.net/files/dlib-19.21.zip
+  - 7z x dlib-19.21.zip
 
 before_build:
   - xcopy "%APPVEYOR_BUILD_FOLDER%\sampml\sampml" "%APPVEYOR_BUILD_FOLDER%\examples\anti-aimbot\plugin\lib\sampml" /e /i
